@@ -9,24 +9,30 @@ import { BrowserRouter as Router, Route } from "react-router-dom"
 import PokemonDetail from "./components/PokemonDetail"
 import { css, jsx } from '@emotion/react'
 import NavBarFooter from "./components/NavBarFooter"
+import pokeball from './img/pokeball.png'
 
 function App() {
 
   return (
     <div css={{
-      backgroundColor: "white"
+      backgroundColor: "#1FAA59"
     }}>
 
-      <h1 css={{
-        color: "white",
-        backgroundColor: "#e74c3c",
-        padding: "10px",
-        textAlign: "center"
-      }}>Pokemon App</h1>
+      <div>
+        <h1 css={css`
+        padding : 12px;
+        text-align : center;
+        color : white`}>
+
+          <img css={css` width : 50px; 
+          padding-bottom : 10px; 
+          padding-right : 5px;
+          filter : invert(100%)`} src={pokeball} alt="Pokeball" />Pokemon App</h1>
+      </div>
 
       <Router>
         <main css={css`
-          padding-bottom : 65px`}>
+          padding-bottom : 45px`}>
           <Route exact path="/">
             <PokemonList />
           </Route>

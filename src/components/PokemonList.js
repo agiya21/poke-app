@@ -44,21 +44,16 @@ class PokemonList extends React.Component {
         const { pokeDetails } = this.state
         return (
             <div>
-                <h2 css={css`text-align : center`}>Pokemon Lists</h2>
+                <h2 css={css`text-align : center`}>Choose Your Pokemon!</h2>
                 <div css={css`
                     text-align : center;
-                    padding : 12px; 
-                    color : red;
-                    background-color : violet;
+                    padding-top : 25px; 
+                    background-color : white;
                     border : none;
-                    border-radius : 12px`}>
+                    border-radius : 15px`}>
                     {this.state.loading === true && <h2>Loading...</h2>}
                     <Lists details={pokeDetails} />
                 </div>
-
-
-
-
             </div>
         )
     }

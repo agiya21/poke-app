@@ -10,7 +10,7 @@ import { css, jsx } from '@emotion/react'
 function NavBarFooter() {
     return (
         <footer>
-            <Navbar bg="light" fixed="bottom" className="justify-content-center">
+            <Navbar css={css`background-color : white`} fixed="bottom" className="justify-content-center">
                 <Nav>
                     <Nav.Item css={css`
                         padding : 10px`}>
